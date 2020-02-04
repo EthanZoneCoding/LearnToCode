@@ -71,9 +71,9 @@ function start(less) {
             inp = "<!-- This is a comment. They do not appear on the webpage, only in the code -->\n<!-- x -->\n<!-- The above x is where you put the words for the comment -->\n<!-- \nComments can take up unlimited lines!\n-->";
             break;
         case 2:
-            inp = "<!-- Now practice typing 'Comment' (case sensitive) in a comment below -->\n";
+            inp = "<!-- Now practice typing 'Comment' in a comment below -->\n";
             disableNext();
-            condition = "document.getElementById('in').value.slice(74, 91) == '\n<!-- Comment -->'";
+            condition = "document.getElementById('in').value.slice(57, 74).toLowerCase() == '\n<!-- comment -->'";
             setButton(condition.replace(/'/g, "`"));
             break;
         case 3:
@@ -102,21 +102,21 @@ function start(less) {
             addlines(18);
             break;
         case 10:
-            inp = "<!-- Make a button below that alerts 'bye' that says 'Click Me' (case sensitive). -->\n";
+            inp = "<!-- Make a button below that alerts 'bye' that says 'Click Me'. -->\n";
             disableNext();
-            condition = "/<button onclick=.*alert(.*bye.*);.*>Click Me<&#92;/button>/.test(document.getElementById('in').value.slice(85, 135))";
+            condition = "/<button onclick=.*alert(.*bye.*);.*>Click Me<&#92;/button>/.test(document.getElementById('in').value.slice(68, 118).toLowerCase())";
             setButton(condition);
             break;
         case 11:
-            inp = "<!-- Make a link below that takes you to 'https://google.com' that says 'Click Me' (case sensitive). -->\n";
+            inp = "<!-- Make a link below that takes you to 'https://google.com' that says 'Click Me'. -->\n";
             disableNext();
-            condition = "/<a href=.*https:&#92;/&#92;/google.com.*>Click Me<&#92;/a>/.test(document.getElementById('in').value.slice(105, 147))";
+            condition = "/<a href=.*https:&#92;/&#92;/google.com.*>Click Me<&#92;/a>/.test(document.getElementById('in').value.slice(88, 130).toLowerCase())";
             setButton(condition);
             break;
         case 12:
-            inp = "<!-- Open and close a 'script' tag. (Replace the 'h1' in the h1 tag with 'script') (case sensitive). -->\n";
+            inp = "<!-- Open and close a 'script' tag. (Replace the 'h1' in the h1 tag with 'script'). -->\n";
             disableNext();
-            condition = "/<script><&#92;/script>/.test(document.getElementById('in').value.slice(104, 131))";
+            condition = "/<script><&#92;/script>/.test(document.getElementById('in').value.slice(187, 114).toLowerCase())";
             setButton(condition);
             break;
         case 13:
