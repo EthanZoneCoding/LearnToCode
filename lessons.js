@@ -99,7 +99,7 @@ function start(less) {
             break;
         case 9:
             inp = "<!-- Next up are buttons. The following button will open a dialog box that says 'hi' -->\n\n<button onclick=\"alert('hi');\">Click Me</button>\n\n<!-- Let's break that down. The 'onclick' attribute runs code when the tag it is on is pressed (like the button).\n\nThe value of the onclick is \"alert('hi')\".\n\n'alert' opens text in a dialog box.\n\nThe text it opens is what comes after it in parentheses. 'alert()'\n\nBecause we want to alert plain text, we put our text in quotes. \"alert('')\".\n\nThe reason that is so complex is because \"alert('')\" is JavaScript, and that is another language. Sorry for being so complex.\n\n-->";
-            addlines(18);
+            addlines(20);
             break;
         case 10:
             inp = "<!-- Make a button below that alerts 'bye' that says 'Click Me'. -->\n";
