@@ -1,0 +1,146 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Kalam&display=swap');
+
+#header_orange {
+    background-color: #F8BB4B;
+    border-radius: 30px / 25px;
+    padding-top: 0px;
+    padding-right: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 0px;
+    color: #3A0F0F;
+}
+#header_white {
+    background-color: #F0F0F0;
+    padding-top: 0px;
+    padding-right: 3%;
+    padding-left: 3%;
+    border-radius: 30px / 25px;
+    color: #3A0F0F;
+}
+
+#header_main {
+    background-color: tan;
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-left: 25px;
+    padding-bottom: 30px;
+    font-size: 4em;
+    font-family: kalam;
+
+}
+.nav {
+    margin-top: -90px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    background-color: #E8DDCD;
+    width: 200px;
+    height: 50px;
+    font-size: 24px;
+    font-family: kalam;
+    border-radius: 25px / 30px;
+    color: #764D11;
+}
+#right {
+    float: right;
+    margin-right: 10%;
+}
+#right:disabled {
+    background-color: #CFCFCF;
+}
+
+#left {
+    float: left;
+    margin-left: 10%;
+}
+tr  {
+    margin: 0px;
+    font-size: 15px;
+}
+
+.nav:hover {
+    background-color: #EFEAE3;
+    color: tan;
+
+}
+#title {
+    font-family: kalam;
+    margin-left: 45%;
+    width: 40%;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #6B3B1B;
+    margin-top: 60px;
+    overflow: hidden;
+    display: flex;
+}
+#lesson {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#output {
+    border: 5px solid gray;
+    width: 48%;
+    border-radius: 5px;
+    margin-left: 4%;
+    background-color: #FCFCFC;
+}
+
+#cells {
+    border: solid grey 1px;
+    background-color: lightgrey;
+    height: 100px;
+    padding: 1px;
+    font-family: monospace;
+}
+#in {
+    width: 100%;
+    font-family: monospace;
+    resize: none;
+    background-color: #ECECEC;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -1px;
+}
+#correct {
+	transform: translate(10%, -15%);
+	animation: fadeIn 2s;
+}
+@keyframes fadeIn {
+   0% {opacity: 0;}
+   100% {opacity: 1;}
+} 
+#ans {
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    background-color: #7CC84E;
+    width: 200px;
+    height: 50px;
+    font-size: 24px;
+    font-family: kalam;
+    border-radius: 25px / 30px;
+    color: #FFFFFF;
+}
+#input {
+    display: flex;
+    border: 5px solid gray;
+    border-radius: 5px;
+    width: 48%;
+}
+#notes {
+    font-family: kalam;
+    font-size: 30pt;
+    border: 5px solid gray;
+    border-radius: 5px;
+    width: 79%;
+    height: 300px;
+    margin-left: 10%;
+    margin-top: 20px;
+    background-color: #FFEFB7;
+    color: #6B3B1B;
+}

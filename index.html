@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+	<base target="_blank">
+	<meta charset="utf-8">
+	<title>Learn To Code</title>
+	<link href="main.css" rel="stylesheet" type="text/css">
+	<script src="lessons.js"></script>
+</head>
+
+<body>
+	<header id="header_main">
+		<span id="header_orange">Learn To Make</span>
+		<span id="header_white">Interactive Web Pages</span>
+	</header>
+	<button onclick="change(1);">Skip</button>
+	<div>
+		<p id="title">Lesson 1</p>
+		<button class="nav" id="left" onclick="change(-1)">
+			Previous
+		</button>
+		<button class="nav" id="right" onclick="change(1)">
+			Next
+		</button>
+	</div>
+	<div id="lesson">
+		<div id="input">
+			<table id="cells">
+				<tr>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td>3</td>
+				</tr>
+				<tr>
+					<td>4</td>
+				</tr>
+				<tr>
+					<td>5</td>
+				</tr>
+				<tr>
+					<td>6</td>
+				</tr>
+				<tr>
+					<td>7</td>
+				</tr>
+			</table>
+			<textarea id="in" oninput="execute()">&lt;!-- This is a comment. They do not appear on the webpage, only in the code --&gt;
+&lt;!-- x --&gt;
+&lt;!-- The above x is where you put the words for the comment --&gt;
+&lt;!-- 
+Comments can take up unlimited lines!	
+--&gt;</textarea>
+		</div>
+		<div id="output"></div>
+	</div>
+	<div id="answer"></div>
+	<textarea id="notes">Type your notes here...</textarea>
+</body>
+</html>
