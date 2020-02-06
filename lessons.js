@@ -33,7 +33,7 @@ function execute() {
 
 function addlines(lines) {
     var i;
-    for (i = document.getElementsByTagName('tr').length; i <= lines; i++) {
+    for (i = document.getElementsByTagName('tr').length + 1; i <= lines; i++) {
         document.getElementById("cells").innerHTML += "<tr>\n<td>" + i + "</td>\n</tr>";
     }
 }
