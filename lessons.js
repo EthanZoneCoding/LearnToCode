@@ -78,18 +78,18 @@ function start(less) {
             break;
         case 3:
             inp = "<!-- Below is an opening header tag -->\n<h1>\n\n</h1>\n<!-- Above is an closing header tag -->\n\n<!-- The slash makes it a closing tag. Anything inside will be a header (except the comment). Try typing something between the tags. -->";
-            addlines(8);
+            addlines(9);
             break;
         case 4:
             inp = "<h1>You can replace</h1>\n<h2>The 'h1', 'h2', or 'h3'</h2>\n<h3>With any tag you want!</h3>\n<!-- I will teach you some of them later. -->";
             break;
         case 5:
             inp = "<p>This is a paragraph. It is in a paragraph tag. I want to make part of it bold. How do I do that?</p>\n\n<!-- You might have guessed that we use a bold - or strong tag. You would be correct. -->\n\n<strong>This is bold!</strong>\n\n<!-- Where might we put it? Well, it can literally go in the other tag! -->\n\n<p>This is a paragraph. It is in a paragraph tag. <strong>This is bold!</strong></p>\n\n<!-- This is called nesting. Just make sure to open and close the tags so they have the correct layout when compiled. -->";
-            addlines(12);
+            addlines(17);
             break;
         case 6:
             inp = "<!-- Another good example of a nested tag is a divider tag or div. -->\n\n<div></div>\n\n<!-- They are invisible but are good for sorting other sections of a webpage. You can also apply styles to them, but we will learn about that later. -->\n\n<div>\n	<div>\n		<div>\n\n		</div>\n	</div>\n</div>";
-            addlines(13);
+            addlines(18);
             break;
         case 7:
             inp = "<!-- I am only covering the bare minimum of tags. You can find more complicated tags at w3schools.com -->";
@@ -99,7 +99,7 @@ function start(less) {
             break;
         case 9:
             inp = "<!-- Next up are buttons. The following button will open a dialog box that says 'hi' -->\n\n<button onclick=\"alert('hi');\">Click Me</button>\n\n<!-- Let's break that down. The 'onclick' attribute runs code when the tag it is on is pressed (like the button).\n\nThe value of the onclick is \"alert('hi')\".\n\n'alert' opens text in a dialog box.\n\nThe text it opens is what comes after it in parentheses. 'alert()'\n\nBecause we want to alert plain text, we put our text in quotes. \"alert('')\".\n\nThe reason that is so complex is because \"alert('')\" is JavaScript, and that is another language. Sorry for being so complex.\n\n-->";
-            addlines(20);
+            addlines(23);
             break;
         case 10:
             inp = "<!-- Make a button below that alerts 'bye' that says 'Click Me'. -->\n";
